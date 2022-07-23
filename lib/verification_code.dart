@@ -76,21 +76,22 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     defaultPinTheme: PinTheme(
-                        height: 60.0,
-                        width: 60.0,
-                        textStyle: GoogleFonts.urbanist(
-                          fontSize: 24.0,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w700,
+                      height: 60.0,
+                      width: 60.0,
+                      textStyle: GoogleFonts.urbanist(
+                        fontSize: 24.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.black.withOpacity(0.5),
+                          width: 1.0,
                         ),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.white,
-                          border: Border.all(
-                            color: Colors.black.withOpacity(0.5),
-                            width: 1.0,
-                          ),
-                        ),),
+                      ),
+                    ),
                     focusedPinTheme: PinTheme(
                       height: 60.0,
                       width: 60.0,
@@ -106,7 +107,8 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
                           color: Colors.black,
                           width: 1.0,
                         ),
-                      ),),
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -131,7 +133,7 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
               /// Continue Button
               const Expanded(child: SizedBox()),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 borderRadius: BorderRadius.circular(30.0),
                 child: Ink(
                   height: 55.0,
@@ -141,7 +143,8 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
                     color: Colors.black,
                   ),
                   child: Center(
-                    child: Text('Continue',
+                    child: Text(
+                      'Continue',
                       style: GoogleFonts.urbanist(
                         fontSize: 15.0,
                         color: Colors.white,
@@ -155,7 +158,6 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
               const SizedBox(
                 height: 16.0,
               ),
-
             ],
           ),
         ),

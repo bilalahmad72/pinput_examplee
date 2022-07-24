@@ -76,7 +76,7 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
 
-                    
+
                     defaultPinTheme: PinTheme(
                       height: 60.0,
                       width: 60.0,
@@ -113,6 +113,8 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
                         ),
                       ),
                     ),
+
+
                   ),
                 ),
               ),
